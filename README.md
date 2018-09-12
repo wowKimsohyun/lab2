@@ -56,11 +56,13 @@ public class Student {
 
 package lambaitaplab2.com;
 
+package lambaitaplab2.com;
+
 public class StudentManagement{
 	Student []students = new Student[100];
 	public boolean sameGroup(Student s1, Student s2) {
         return s1.getGroup().equals(s2.getGroup());
-    }
+	}
 	void studentsByGroup() {
 		System.out.println("Danh sach sinh vien lop INT22041:");
 		for (int i=0;i<this.students.length;i++){
@@ -74,7 +76,7 @@ public class StudentManagement{
 				System.out.println(this.students[i].getInfo());
 			}
 		}
-    }
+	}
 	void removeStudent(String id) {
 		int i,j;
 		for (i=0;i<this.students.length;i++){
